@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {"name":"Python Debugger: Current File","type":"debugpy","request":"launch","program":"${file}","console":"integratedTerminal"},
+        {
+            "name": "Python Debugger: Current File",
+            "type": "python",
+            //"type":"debugpy",
+            "request": "launch",
+            //"program": "${workspaceFolder}/install/path_storage/lib/path_storage/path_storage_manager",
+            // "args": [
+            //     "${workspaceFolder}/test"
+            // ],
+            //"cwd": "${workspaceFolder}",
+            "program": "${file}",
+            "console": "integratedTerminal",      
+            "cwd": "${fileDirname}"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "package",
+            "type": "promptString",
+            "description": "package name",
+            "default": "topic_service_action_rclcpp_example"
+        },
+        {
+            "id": "node",
+            "type": "promptString",
+            "description": "node name",
+            "default": "argument"
+        }
+    ]
+}
